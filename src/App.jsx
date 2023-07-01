@@ -10,13 +10,14 @@ function App() {
   }, []);
   return (
     <>
-      <h1>Markdown Preview</h1>
+      <h1 className="title">Markdown Preview</h1>
       <div className="container">
         <textarea
           name="input"
           id="input"
           value={text}
           ref={inputRef}
+          placeholder="Enter the markdown text to see the preview of them."
           onChange={(e) => setText(e.target.value)}
         ></textarea>
         <div className="preview">
